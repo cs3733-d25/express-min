@@ -1,0 +1,16 @@
+{
+  "name": "backend",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --loader ts-node/esm src/app.ts"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1"
+  }
+}
