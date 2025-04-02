@@ -23,11 +23,11 @@ app.get("/api/employees", async (_, response) => {
 });
 
 app.post("/api/employees", async (request, response) => {
-  await prisma.employee.create({
-    data: request.body,
-  });
-
-  response.sendStatus(200);
+  response.json(
+    await prisma.employee.create({
+      data: request.body,
+    }),
+  );
 });
 
 app.listen(port, () => {
